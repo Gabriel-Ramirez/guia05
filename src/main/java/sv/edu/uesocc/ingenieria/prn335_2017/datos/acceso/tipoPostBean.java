@@ -82,6 +82,10 @@ public class tipoPostBean implements Serializable{
         }
 
     }
+    
+    /*
+    Realiza cambios en la lista para filtrar los datos usados y no usados 
+    */
         public void chkCambio(){
         if(activo == true){
             this.lista = obtenerUtilizados();

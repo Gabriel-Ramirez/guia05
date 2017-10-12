@@ -18,6 +18,9 @@ public abstract class AbstractFacade<T> {
 
     protected abstract EntityManager getEntityManager();
 
+    /*
+    Ayuda a la creacion de nuevos registros
+    */
     public void create(T entity) {
          EntityManager em = getEntityManager();
         try {
